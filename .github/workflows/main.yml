@@ -14,6 +14,10 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     
+    # Menambahkan variabel agar menggunakan Node.js 24 dan menghilangkan warning
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    
     steps:
       - name: generate pacman-contribution-graph.svg
         uses: Platane/snk/svg-only@v3
@@ -24,7 +28,7 @@ jobs:
             dist/pacman-contribution-graph-dark.svg?palette=github-dark
           
       - name: push pacman-contribution-graph.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v5 # Update ke v5 (terbaru)
         with:
           target_branch: output
           build_dir: dist
