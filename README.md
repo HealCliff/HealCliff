@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">🚀 Im a software engineer working with fullstack applications, specializing in fullstack website development.
+<p align="left">🚀 Im a software engineer working with fullstack applications, specializing in fullstack website development and mobile apps.
 
 ###
 
